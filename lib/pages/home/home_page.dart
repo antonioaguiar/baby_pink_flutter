@@ -30,15 +30,15 @@ class _HomePageState extends State<HomePage> {
               child: Center(child: Image.asset("images/babypink.png"))),
           Padding(
             padding: const EdgeInsets.fromLTRB(30, 40, 30, 15),
-            child: TextField(
-              textAlign: TextAlign.right,
+            child: TextFormField(
+              textAlign: TextAlign.left,
               //tipo do teclado
               //text, number, emailAddress, datetime
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   //borderRadius: BorderRadius.all(Radius.circular(12.0)),
-                  borderSide: BorderSide(color: Colors.red, width: 2),
+                  borderSide: BorderSide(color: Colors.pinkAccent, width: 2),
                 ),
                 labelText: 'email',
                 labelStyle: TextStyle(
@@ -47,14 +47,14 @@ class _HomePageState extends State<HomePage> {
               ),
               style: TextStyle(
                 fontSize: 25,
-                color: Colors.lightBlue,
+                color: Colors.pink,
               ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(30, 10, 30, 15),
-            child: TextField(
-              textAlign: TextAlign.right,
+            child: TextFormField(
+              textAlign: TextAlign.left,
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
               obscureText: true,
               style: TextStyle(
                 fontSize: 25,
-                color: Colors.lightBlue,
+                color: Colors.pink,
               ),
             ),
           ),

@@ -7,6 +7,7 @@ class AppWidget extends StatelessWidget {
     bool isDark = false;
 
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'baby pink',
         theme: ThemeData(
           primaryColorLight: Colors.white,
